@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military">
+  <BuildRestrictions>
+    <Territory>own ally neutral</Territory>
+    <PlacementType>shore</PlacementType>
+    <Category>Dock</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <stone>200</stone>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="18.0" depth="18.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>2</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Ship</EjectClassesOnDestroy>
+    <List datatype="tokens">Ship</List>
+    <BuffHeal>0</BuffHeal>
+    <LoadingRange>2</LoadingRange>
+  </GarrisonHolder>
+  <Health>
+    <Max>2500</Max>
+    <SpawnEntityOnDeath>rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Shipyard</GenericName>
+    <Tooltip>Build upon a shoreline to construct Warships and research naval improvements.</Tooltip>
+    <Classes datatype="tokens">Naval</Classes>
+    <VisibleClasses datatype="tokens">Military Town Shipyard</VisibleClasses>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Icon>structures/shipyard.png</Icon>
+  </Identity>
+  <Loot>
+    <xp>200</xp>
+    <food>0</food>
+    <wood>30</wood>
+    <stone>0</stone>
+    <metal>0</metal>
+    <glory>200</glory>
+  </Loot>
+  <Obstruction>
+    <Static width="18.0" depth="18.0"/>
+  </Obstruction>
+  <Position>
+    <Floating>true</Floating>
+	<FloatDepth>0.0</FloatDepth>
+  </Position>
+  <RallyPointRenderer>
+    <LinePassabilityClass>ship</LinePassabilityClass>
+  </RallyPointRenderer>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_dock.xml</select>
+      <constructed>interface/complete/building/complete_dock.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <TerritoryDecay disable=""/>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}_ship_bireme
+      units/{civ}_ship_trireme
+	  units/{civ}_ship_quinquereme
+    </Entities>
+    <Technologies datatype="tokens">
+      training_naval_construction
+	  naval_cost_01
+    </Technologies>
+  </ProductionQueue>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <Vision>
+    <Range>40</Range>
+  </Vision>
+  <VisualActor>
+    <FoundationActor>structures/fndn_4x4_dock.xml</FoundationActor>
+  </VisualActor>
+</Entity>

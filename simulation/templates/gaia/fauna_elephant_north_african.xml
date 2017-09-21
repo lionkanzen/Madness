@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_fauna_hunt_defensive_elephant">
+  <Attack>
+    <Melee>
+      <Hack>20.0</Hack>
+      <Crush>15.0</Crush>
+    </Melee>
+  </Attack>
+  <Footprint>
+    <Circle radius="2.75"/>
+    <Height>2.7</Height>
+  </Footprint>
+  <Health>
+    <Max>200</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+	<GenericName>North African Elephant</GenericName>
+    <SpecificName>Loxodonta africana pharaoensis</SpecificName>
+    <Icon>gaia/fauna_elephant_north_african.png</Icon>
+  </Identity>
+  <ResourceSupply>
+    <Amount>500</Amount>
+    <Type>food.meat</Type>
+  </ResourceSupply>
+  <VisualActor>
+    <Actor>fauna/elephant_african_forest.xml</Actor>
+  </VisualActor>
+</Entity>

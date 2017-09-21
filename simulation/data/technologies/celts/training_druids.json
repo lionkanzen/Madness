@@ -1,0 +1,16 @@
+{
+	"genericName": "Druidic Conclave",
+	"description": ".",
+	"cost": {"food": 200, "wood": 0, "glory": 200, "metal": 0},
+	"requirements": { "all": [{ "tech": "phase_town" }, { "any": [{ "civ": "celt" }, { "civ": "brit" }, { "civ": "gaul" }] }] },
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "conclave.png",
+	"researchTime": 40,
+	"tooltip": "Druids -50% train time, but +10 metal cost.",
+	"modifications": [
+		{"value": "Cost/BuildTime", "multiply": 0.5},
+		{"value": "Cost/Resources/metal", "add": 10}		
+	],
+	"affects": ["Healer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

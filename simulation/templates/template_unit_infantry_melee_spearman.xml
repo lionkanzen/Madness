@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee">
+  <Armour>
+    <Hack>3</Hack>
+    <Pierce>2</Pierce>
+    <Crush>2</Crush>
+  </Armour>
+  <Attack>
+    <Melee>
+      <Hack>10.0</Hack>
+      <Pierce>0.0</Pierce>
+      <MaxRange>6.0</MaxRange>
+	  <Bonuses>
+		<BonusCavalry>
+		  <Classes>Cavalry</Classes>
+		  <Multiplier>1.5</Multiplier>
+		</BonusCavalry>
+	  </Bonuses>
+    </Melee>
+  </Attack>
+  <Cost>
+    <Resources>
+      <wood>50</wood>
+    </Resources>
+  </Cost>
+  <Identity>
+    <VisibleClasses datatype="tokens">Spear</VisibleClasses>
+    <GenericName>Spear Infantry</GenericName>
+    <History>Probably one of the most primitive units in the game. Fighting with a sharp object at the end of a pole didn't require a lot of technology to develop. It also allowed the human to distance themselves from their attacker. As time passed the spears got longer and longer. Started with a fighting style similar to using a quarterstaff, then to using them in numbers as a 'pin cushion' vs. humans (sarissa in a phalanx). Later it was developed to combat cavalry. During the medieval period it evolved to the pike. These units tended to be armored as heavily as possible.</History>
+    <Tooltip>Traits: Medium Speed, Medium Armor, Medium Attack.
+Strong Against: All Cavalry (1.5x).
+Weak Against: Ranged Units, Sword Infantry.</Tooltip>
+  </Identity>
+  <Loot>
+    <wood>5</wood>
+  </Loot>
+</Entity>

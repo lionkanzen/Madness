@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_cavalry_ranged">
+  <Armour>
+    <Hack>1</Hack>
+    <Pierce>2</Pierce>
+    <Crush>1</Crush>
+  </Armour>
+  <Attack>
+    <Ranged>
+      <Hack>0.0</Hack>
+      <Pierce>20.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>40</MaxRange>
+      <ProjectileSpeed>40.0</ProjectileSpeed>
+	  <Bonuses>
+		<BonusPrimary>
+		  <Classes>Support</Classes>
+		  <Multiplier>1.5</Multiplier>
+		</BonusPrimary>
+		<ElephantStench>
+		  <Classes>Elephant</Classes>
+		  <Multiplier>0.5</Multiplier>
+		</ElephantStench>
+		<CamelStench>
+		  <Classes>Camel</Classes>
+		  <Multiplier>0.5</Multiplier>
+		</CamelStench>
+	  </Bonuses>
+      <PreferredClasses datatype="tokens">Support</PreferredClasses>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <Resources>
+      <food>60</food>
+	  <wood>60</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>130</Max>
+  </Health>
+  <Identity>
+    <VisibleClasses datatype="tokens">Javelin</VisibleClasses>
+    <GenericName>Javelin Cavalry</GenericName>
+    <History>The javelins thrown from a horse's back were probably 3 at most. The idea was to quickly advance with 3 in hand, then throw them all. After you had done that it was time to switch to your secondary weapon which was usually a spear or a sword. However, in the game - these units will only have ranged attack.</History>
+    <Tooltip>Traits: Fast Speed, Light Armor, Raider.
+Strong Against: Female Citizens (1.5x), Healers (1.5x), Traders (1.5x).
+Weak Against: Javelin Infantry, Sword Cavalry, Elephants, Camels.</Tooltip>
+  </Identity>
+  <Loot>
+    <xp>130</xp>
+    <food>10</food>
+    <wood>5</wood>
+    <stone>0</stone>
+    <metal>0</metal>
+  </Loot>
+</Entity>

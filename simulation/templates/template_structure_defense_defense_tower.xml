@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defense">
+  <Attack>
+    <Ranged>
+      <Hack>0.0</Hack>
+      <Pierce>20.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>40.0</MaxRange>
+      <MinRange>12.0</MinRange>
+      <ElevationBonus>15</ElevationBonus>
+      <ProjectileSpeed>50.0</ProjectileSpeed>
+	  <Gravity>9.81</Gravity>
+      <PrepareTime>2000</PrepareTime>
+      <RepeatTime>4000</RepeatTime>
+      <Spread>1.5</Spread>
+	  <Delay>0</Delay>
+      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
+      <Bonuses>
+        <NerfSiege>
+          <Classes>Siege</Classes>
+          <Multiplier>0.75</Multiplier>
+        </NerfSiege>
+      </Bonuses>
+    </Ranged>
+  </Attack>
+  <BuildingAI>
+    <DefaultArrowCount>1</DefaultArrowCount>
+    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
+    <MaxArrowCount>5</MaxArrowCount>
+	<GarrisonArrowClasses>Infantry+Ranged</GarrisonArrowClasses>
+  </BuildingAI>
+  <BuildRestrictions>
+    <Category>DefenseTower</Category>
+	<Territory>own ally</Territory>
+	<PlacementType>land-shore</PlacementType>
+    <Distance>
+      <FromClass>DefenseTower</FromClass>
+      <MinDistance>30</MinDistance>
+    </Distance>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <wood>100</wood>
+      <stone>0</stone>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="10.0" depth="10.0"/>
+    <Height>15.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>5</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">Support Infantry Minister</List>
+    <BuffHeal>0</BuffHeal>
+    <LoadingRange>2</LoadingRange>
+  </GarrisonHolder>
+  <Health>
+    <Max>400</Max>
+    <SpawnEntityOnDeath>rubble/rubble_stone_2x2</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Wooden Defense Tower</GenericName>
+    <Tooltip>Shoots arrows. Garrison to provide extra defense. Can be built in allied territory for mutual defense.</Tooltip>
+    <Classes datatype="tokens">GarrisonTower -ConquestCritical</Classes>
+    <VisibleClasses datatype="tokens">Village Wood Tower DefenseTower Ranged</VisibleClasses>
+    <Icon>structures/palisade_fort.png</Icon>
+	<RequiredTechnology>phase_village</RequiredTechnology>
+  </Identity>
+  <Loot>
+    <xp>200</xp>
+    <food>0</food>
+    <wood>10</wood>
+    <stone>10</stone>
+    <metal>0</metal>
+    <glory>100</glory>
+  </Loot>
+  <Obstruction>
+    <Static width="7.0" depth="7.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Technologies datatype="tokens">
+	  vision_defense_tower
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_tower.xml</select>
+      <constructed>interface/complete/building/complete_tower.xml</constructed>
+      <attack>attack/weapon/arrowfly.xml</attack>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <BarWidth>6.0</BarWidth>
+    <BarHeight>0.6</BarHeight>
+    <HeightOffset>16.0</HeightOffset>
+  </StatusBars>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>20</Radius>
+    <Weight>20000</Weight>
+  </TerritoryInfluence>
+  <Upgrade>
+    <Tower>
+      <Entity>structures/{civ}_defense_tower_stone</Entity>
+      <Tooltip>Stone Towers have double health and additional technologies.</Tooltip>
+	  <RequiredTechnology>phase_town</RequiredTechnology>
+      <Cost>
+        <stone>100</stone>
+		<wood>0</wood>
+      </Cost>
+      <Time>30</Time>
+    </Tower>
+  </Upgrade>
+  <Vision>
+    <Range>60</Range>
+  </Vision>
+  <VisualActor>
+    <FoundationActor>structures/fndn_2x2.xml</FoundationActor>
+  </VisualActor>
+</Entity>

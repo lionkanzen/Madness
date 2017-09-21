@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_fauna_herd">
+  <Identity>
+    <VisibleClasses datatype="tokens">Domestic</VisibleClasses>
+  </Identity>
+  <ResourceTrickle>
+    <Rates>
+      <food>0.0</food>
+      <wood>0.0</wood>
+      <stone>0.0</stone>
+      <metal>0.0</metal>
+    </Rates>
+    <Interval>1000</Interval>
+  </ResourceTrickle>
+  <UnitAI>
+    <NaturalBehaviour>domestic</NaturalBehaviour>
+  </UnitAI>
+  <Vision>
+    <Range>6</Range>
+  </Vision>
+  <VisualActor>
+    <SilhouetteDisplay>true</SilhouetteDisplay>
+  </VisualActor>
+</Entity>

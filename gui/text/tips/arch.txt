@@ -1,0 +1,6 @@
+TRIUMPHAL ARCH
+- Costs 800 stone and 800 glory, to unlock the City Phase for the Principate Romans.
+
+- Once built, the Principate Romans can research City Phase instantly.
+
+- Building one also increases the loyalty, or capture points, for the player's capturable buildings.

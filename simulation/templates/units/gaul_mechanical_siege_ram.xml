@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="units/celt_mechanical_siege_ram">
+  <Identity>
+    <Civ>gaul</Civ>
+  </Identity>
+</Entity>

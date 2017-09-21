@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <BuildRestrictions>
+    <Category>Syssition</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>150</BuildTime>
+    <Resources>
+      <wood>0</wood>
+      <stone>200</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="20.0" depth="30.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>rubble/rubble_stone_4x6</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>spart</Civ>
+    <GenericName>Military Mess Hall</GenericName>
+    <SpecificName>Syssítion</SpecificName>
+    <Classes datatype="tokens">
+	  Syssition
+	  Village
+	</Classes>
+    <Tooltip>Train hoplite units such as Perioikoi Hoplites and Spartiate champion infantry, and Spartan heroes.</Tooltip>
+    <History>The Syssítia were where full-blooded Spartans, even Spartan kings, barracked and dined together.</History>
+    <Icon>structures/syssition.png</Icon>
+	<RequiredTechnology>phase_village</RequiredTechnology>
+  </Identity>
+  <Obstruction>
+    <Static width="16.0" depth="26.0"/>
+  </Obstruction>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_gymnasium.xml</select>
+      <constructed>interface/complete/building/complete_gymnasium.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+	  units/{civ}_infantry_spearman_b
+	  units/spart_champion_infantry_spear
+      units/{civ}_hero_leonidas
+      units/{civ}_hero_brasidas
+      units/{civ}_hero_agis
+    </Entities>
+    <Technologies datatype="tokens">
+      hellenes/spartans_upgrade_rank_advanced_infantry
+	  hellenes/spartans_upgrade_rank_elite_infantry
+	  hellenes/spartans_agoge
+	  hellenes/spartans_health_inf_martial_arts
+	  hellenes/spartans_secret_police
+	  hellenes/pair_champions_01_spartans
+	  hellenes/speed_tyrtean_paeans
+	  hellenes/attack_inf_spearfighting
+	  pair_champ_02
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/spartans/syssiton.xml</Actor>
+    <FoundationActor>structures/fndn_4x6.xml</FoundationActor>
+  </VisualActor>
+</Entity>

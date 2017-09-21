@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_economic_market">
+  <Footprint>
+    <Square width="27" depth="27"/>
+    <Capturable>
+    <CapturePoints>1000</CapturePoints> 
+    <RegenRate>0</RegenRate> 
+    <GarrisonRegenRate>3</GarrisonRegenRate> 
+  </Capturable>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>ptol</Civ>
+    <SpecificName>ḥwt-n-ḫt.w-wḫa.w</SpecificName>
+    <History>Most Hellenistic cities were centers of trade, and Egyptian cities were no exception.</History>
+  </Identity>
+  <Obstruction>
+    <Entities> datatype="tokens">
+    units/{civ}_support_slave_female
+    units/{civ}_support_slave_female
+    </Entities>
+    <Static width="25.0" depth="25.0"/>
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/generic/merc_slave_market_egypt.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry">
+  <Armour>
+    <Hack>8</Hack>
+    <Pierce>5</Pierce>
+    <Crush>7</Crush>
+  </Armour>
+  <Attack>
+    <Melee>
+      <Hack>25.0</Hack>
+      <Pierce>0.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>5.0</MaxRange>
+	  <PrepareTime>500</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+	  <Bonuses>
+		<BonusAllInfantry>
+		  <Classes>Infantry</Classes>
+		  <Multiplier>1.5</Multiplier>
+		</BonusAllInfantry>
+		<BonusElephant>
+		  <Classes>Elephant</Classes>
+		  <Multiplier>1.5</Multiplier>
+		</BonusElephant>
+	  </Bonuses>
+	  <RestrictedClasses datatype="tokens">MercenaryCamp Ship</RestrictedClasses>
+      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
+    </Melee>
+  </Attack>
+  <Identity>
+    <VisibleClasses datatype="tokens">Melee Sword</VisibleClasses>
+    <GenericName>Hero Swordsman</GenericName>
+    <Tooltip>Traits: Medium Speed, Heavy Armor, High Attack.
+Strong Against: All Infantry (1.5x), Elephants (1.5x).
+Weak Against: Archer Infantry, Slinger Infantry, Archer Cavalry.</Tooltip>
+  </Identity>
+  <UnitMotion>
+    <WalkSpeed>9.0</WalkSpeed>
+    <Run>
+      <Speed>20.0</Speed>
+      <Range>600.0</Range>
+      <RangeMin>8.0</RangeMin>
+    </Run>
+  </UnitMotion>
+</Entity>

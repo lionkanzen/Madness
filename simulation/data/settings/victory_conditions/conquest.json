@@ -1,0 +1,14 @@
+{
+	"TranslatedKeys": ["Title", "Description"],
+	"Data":
+	{
+		"Title": "Annihilation",
+		"Description": "Completely wipe out all enemy units and structures off the map.",
+		"Scripts":
+		[
+			"scripts/TriggerHelper.js",
+			"scripts/ConquestCommon.js",
+			"scripts/Conquest.js"
+		]
+	}
+}

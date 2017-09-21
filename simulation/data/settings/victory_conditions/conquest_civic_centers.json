@@ -1,0 +1,15 @@
+{
+	"TranslatedKeys": ["Title", "Description"],
+	"Data":
+	{
+		"Title": "Domination",
+		"Description": "Dominate the enemy by destroying or capturing all of their Civic Centers.",
+		"Scripts":
+		[
+			"scripts/TriggerHelper.js",
+			"scripts/ConquestCommon.js",
+			"scripts/ConquestCivicCenters.js"
+		],
+		"Default": true
+	}
+}

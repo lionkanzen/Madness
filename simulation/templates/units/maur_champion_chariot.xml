@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_cavalry_archer">
+  <Armour>
+    <Hack>6.0</Hack>
+  </Armour>
+  <Attack>
+    <Ranged>
+      <Pierce>35.0</Pierce>
+    </Ranged>
+  </Attack>
+  <Auras datatype="tokens">
+	chariot_trample_a
+  </Auras>
+  <Cost>
+    <Population>4</Population>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>150</food>
+      <wood>150</wood>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="9" depth="15.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>250</Max>
+  </Health>
+  <Identity>
+    <Civ>maur</Civ>
+    <VisibleClasses datatype="tokens">Chariot</VisibleClasses>
+	<GenericName>War Chariot</GenericName>
+    <SpecificName>Rath</SpecificName>
+	<SelectionGroupName>units/maur_champion_chariot</SelectionGroupName>
+    <History>Champion Cavalry Archer.</History>
+	<Icon>units/maur_champion_chariot.png</Icon>
+	<Tooltip>Counters: 1.5x vs. Melee Infantry. Deals Trample Damage.
+Countered by: Javelin Infantry and Elephants.</Tooltip>
+  </Identity>
+  <Loot>
+    <xp>200</xp>
+    <food>0</food>
+    <wood>20</wood>
+    <stone>0</stone>
+    <metal>20</metal>
+  </Loot>
+  <UnitMotion>
+    <WalkSpeed>16.0</WalkSpeed>
+    <Run>
+      <Speed>36.0</Speed>
+    </Run>
+	<PassabilityClass>large</PassabilityClass> 
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/mauryans/chariot_a.xml</Actor>
+  </VisualActor>
+</Entity>

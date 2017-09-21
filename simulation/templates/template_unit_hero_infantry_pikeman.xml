@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry">
+  <Armour>
+    <Hack>15</Hack>
+    <Pierce>10</Pierce>
+    <Crush>10</Crush>
+  </Armour> 
+  <Attack>
+    <Melee>
+      <Hack>30.0</Hack>
+      <Pierce>0.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>8.0</MaxRange>
+	  <PrepareTime>1000</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+	  <Bonuses>
+		<BonusCavMelee>
+		  <Classes>Cavalry</Classes>
+		  <Multiplier>2.0</Multiplier>
+		</BonusCavMelee>
+	  </Bonuses>
+	  <RestrictedClasses datatype="tokens">MercenaryCamp Ship</RestrictedClasses>
+      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    massed_pikes
+  </Auras>
+  <Identity>
+    <VisibleClasses datatype="tokens">Melee Spear Pike</VisibleClasses>
+    <GenericName>Hero Pikeman</GenericName>
+    <Tooltip>Traits: Slow Speed, Heavy Armor, Weak Attack.
+Strong Against: All Cavalry (2x).
+Weak Against: Ranged Units, Sword Infantry.</Tooltip>
+    <Formations datatype="tokens">
+      formations/syntagma
+    </Formations>
+  </Identity>
+  <UnitMotion>
+    <WalkSpeed>7.5</WalkSpeed>
+    <Run>
+      <Speed>15</Speed>
+    </Run>
+  </UnitMotion>
+</Entity>

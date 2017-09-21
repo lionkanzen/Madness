@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry">
+  <Attack>
+    <Melee>
+      <Hack>1.0</Hack>
+      <Pierce>0.0</Pierce>
+      <Crush>0.0</Crush>
+      <MaxRange>6.0</MaxRange>
+	  <PrepareTime>500</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
+	  <RestrictedClasses datatype="tokens">MercenaryCamp Ship</RestrictedClasses>
+    </Melee>
+  </Attack>
+  <Health>
+    <Max>120</Max>
+  </Health>
+  <Identity>
+    <GenericName>Melee Infantry</GenericName>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+    <Formations datatype="tokens">
+      formations/phalanx
+      formations/testudo
+    </Formations>
+  </Identity>
+  <Vision>
+    <Range>30</Range>
+  </Vision>
+</Entity>

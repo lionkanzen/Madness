@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_cavalry_ranged_archer">
+  <Auras datatype="tokens">
+    camel_stench
+  </Auras>
+  <Identity>
+    <Civ>ptol</Civ>
+    <VisibleClasses datatype="tokens">-Horse Camel</VisibleClasses>
+	<SelectionGroupName>units/ptol_cavalry_archer_b</SelectionGroupName>
+	<GenericName>Nabataean Camel Archer</GenericName>
+    <SpecificName>Mutsābiq Gamal Nabatu</SpecificName>
+    <History>?</History>
+	<Icon>units/ptol_cavalry_archer.png</Icon>
+    <Tooltip>Traits: Long Range, Medium Speed, Light Armor, Harassment.
+Strong Against: Pike Infantry, Spear Infantry, Sword Infantry.
+Weak Against: Javelin Infantry, Sword Cavalry, Elephants.</Tooltip>
+  </Identity>
+  <Promotion>
+    <Entity>units/ptol_cavalry_archer_a</Entity>
+  </Promotion>
+  <Sound>
+    <SoundGroups>
+      <select>actor/fauna/animal/camel.xml</select>
+      <order_walk>actor/fauna/movement/camel.xml</order_walk>
+      <death>actor/fauna/death/death_camel.xml</death>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <WalkSpeed>10.0</WalkSpeed>
+    <Run>
+      <Speed>18.0</Speed>
+    </Run>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/ptolemies/cavalry_archer_b.xml</Actor>
+  </VisualActor>
+</Entity>

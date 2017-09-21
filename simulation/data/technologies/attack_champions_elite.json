@@ -1,0 +1,29 @@
+{
+	"pair": "pair_champ_02",	
+	"genericName": "Heroism",
+	"specificName": {
+		"hele": "Andreia",
+		"mace": "Andreia",
+		"spart": "Andreia",
+		"athen": "Andreia",
+		"ptol": "Andreia",
+		"sele": "Andreia",
+		"rome": "Fortitudo",
+		"imp": "Fortitudo",
+		"sele": "Andreia"
+	},
+	"description": "True leaders and their guard units have uncommon bravery and valor in battle.",
+	"cost": {"food": 500, "wood": 0, "stone": 0, "glory": 500},
+	"requirements": {"tech": "phase_imperial"},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "helmet_hero_side.png",
+	"researchTime": 40,
+	"tooltip": "Heroes and Champions +20% attack.",
+	"modifications": [
+		{"value": "Attack/Melee/Hack", "multiply": 1.2, "affects": "Hero Melee"},
+		{"value": "Attack/Ranged/Pierce", "multiply": 1.2, "affects": "Hero Ranged"},
+		{"value": "Attack/Melee/Hack", "multiply": 1.2, "affects": "Champion Melee"},
+		{"value": "Attack/Ranged/Pierce", "multiply": 1.2, "affects": "Champion Ranged"}
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

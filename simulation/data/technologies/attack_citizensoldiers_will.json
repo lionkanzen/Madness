@@ -1,0 +1,26 @@
+{
+	"pair": "pair_champ_02",	
+	"genericName": "Will to fight",
+	"specificName": {
+		"hele": "Dynamis",
+		"mace": "Dynamis",
+		"spart": "Dynamis",
+		"athen": "Dynamis",
+		"ptol": "Dynamis",
+		"sele": "Dynamis",
+		"theb": "Dynamis",
+		"imp": "Donativum"
+	},
+	"description": "The will to fight is crucial to victory. Sometimes the army's enthusiasm is sweetened with regularized pay or promises of loot for the taking (as after winning a battle or sacking a city).",
+	"cost": {"food": 500, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"tech": "phase_imperial"},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "payment.png",
+	"researchTime": 40,
+	"tooltip": "All citizen-soldiers +20% attack.",
+	"modifications": [
+		{"value": "Attack/Melee/Hack", "multiply": 1.2, "affects": "CitizenSoldier Melee"},
+		{"value": "Attack/Ranged/Pierce", "multiply": 1.2, "affects": "CitizenSoldier Ranged"}
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

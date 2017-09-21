@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_mechanical_ship_trireme">
+  <Identity>
+    <Civ>cart</Civ>
+    <SpecificName>Tlat-Mašōt</SpecificName>
+    <History>Triremes (and later Quinqueremes) were a longtime mainstay of the Phoenician/Carthaginian fleet that was the largest maintained on the Mediterranean Sea, also ranging out into the Atlantic as protection for its Merchantmen. The Athenian Greeks were the only ones to build a faster ship of this type.</History>
+    <Icon>units/cart_ship_trireme.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/carthaginians/trireme.xml</Actor>
+  </VisualActor>
+</Entity>
