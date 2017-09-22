@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support_slave">
+  <Identity>
+    <Civ>kush</Civ>
+  <Lang>latin</Lang>
+  <Gender>female</Gender>
+    <VisibleClasses datatype="tokens">Gatherer Slave</VisibleClasses>
+  <Classes datatype="tokens">Worker</Classes>
+    <GenericName>Slave</GenericName>
+<Tooltip>A cheap, weak gatherer with a finite life span. Good at mining and dying.</Tooltip>
+  <Formations disable=""/>
+    <SpecificName>Nuba Slave Woman</SpecificName>
+    <GenericName>Nuba Slave Woman</GenericName>
+    <History>.</History>
+    <Icon>units/kush_support_female_nuba.png</Icon>
+  <SelectionGroupName>units/kush_support_female_nuba</SelectionGroupName>
+  </Identity>
+    <ResourceGatherer>
+    <MaxDistance>2.0</MaxDistance>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Rates>
+      <food.fruit>2.50</food.fruit>
+      <food.grain>2.50</food.grain>
+      <food.meat>2.0</food.meat>
+      <wood.tree>0.75</wood.tree>
+      <wood.ruins>5.0</wood.ruins>
+      <stone.rock>0.25</stone.rock>
+      <stone.ruins>2.0</stone.ruins>
+      <metal.ore>0.25</metal.ore>
+    <glory disable=""/>
+    </Rates>
+  </ResourceGatherer>
+  <Cost>
+    <Population>1</Population>
+    <Resources>
+      <food>25</food>
+      <wood>25</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>50</Max>
+  <RegenRate>-0.05</RegenRate>
+    <Unhealable>false</Unhealable>
+  </Health>
+  <VisualActor>
+    <Actor>units/mercenaries/nuba_woman.xml</Actor>
+  </VisualActor>
+</Entity>

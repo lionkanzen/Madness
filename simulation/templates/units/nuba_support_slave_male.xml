@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support_slave">
+  <Identity>
+    <Civ>kush</Civ>
+  <Lang>latin</Lang>
+  <Gender>male</Gender>
+    <SpecificName>Servus</SpecificName>
+  <GenericName>Male Slave</GenericName>
+  <VisibleClasses datatype="tokens">Male</VisibleClasses>
+    <History>Slavery played a major role in ancient civilization.</History>
+  <Tooltip>A cheap, weak gatherer with a finite life span. Good at mining stone and metal. Also good at dying.</Tooltip>
+    <Icon>units/imp_support_slave_male.png</Icon>
+ <VisibleClasses datatype="tokens">Gatherer Slave</VisibleClasses>
+  <Classes datatype="tokens">Worker</Classes>
+    <GenericName>Slave</GenericName>
+<Tooltip>A cheap, weak gatherer with a finite life span. Good at mining and dying.</Tooltip>
+  <Formations disable=""/>
+    <SpecificName>Nuba Slave Man</SpecificName>
+    <GenericName>Nuba Slave Man</GenericName>
+    <History>.</History>
+    <Icon>units/kush_support_female_nuba.png</Icon>
+  <SelectionGroupName>units/kush_infantry_archer_b</SelectionGroupName>
+    </Identity>
+    <ResourceGatherer>
+    <MaxDistance>2.0</MaxDistance>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Rates>
+      <food.fruit>0.20</food.fruit>
+      <food.grain>0.20</food.grain>
+      <food.meat>3.0</food.meat>
+      <wood.tree>1.00</wood.tree>
+      <wood.ruins>8.0</wood.ruins>
+      <stone.rock>2.25</stone.rock>
+      <stone.ruins>2.0</stone.ruins>
+      <metal.ore>2.25</metal.ore>
+    <glory disable=""/>
+    </Rates>
+  </ResourceGatherer>
+<Cost>
+    <Population>1</Population>
+    <Resources>
+      <food>100</food>
+      <wood>20</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>50</Max>
+  <RegenRate>-0.3</RegenRate>
+    <Unhealable>true</Unhealable>
+  </Health>
+    <VisualActor>
+    <Actor>units/kushites/nubian_slave_male.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -38,7 +38,7 @@
   </Health>
   <Identity>
     <Civ>merc</Civ>
-  <GenericName>Mercenary Camp</GenericName>
+  <GenericName>Slave Market</GenericName>
   <SpecificName>Needs Specific Name</SpecificName>
     <VisibleClasses datatype="tokens">MercenaryCamp</VisibleClasses>
     <Tooltip>Capture this structure to train up to 30 mercenaries who train very fast and cost no population room. Population bonus: 10.</Tooltip>
@@ -57,6 +57,8 @@
   <Entities datatype="tokens">
    units/gaia_support_slave_female
     units/gaia_support_slave_male
+    units/nuba_support_slave_female
+    units/nuba_support_slave_male
   </Entities>
   <Technologies datatype="tokens">
       unlock_shared_los
